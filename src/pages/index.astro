@@ -1,16 +1,183 @@
----
-
----
-
+<!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content={Astro.generator} />
+    <title>#CaBrighterFuture</title>
+    <style>
+        @font-face {
+            font-family: 'Nexa Bold';
+            src: url('../../public/fonts/nexa-bold-free-font/Nexa-Bold.otf') format('opentype');
+        }
+
+        :root {
+            --font-family: 'Nexa Bold', sans-serif;
+            --primary-color: #005baa; 
+            --secondary-color: #0068cf; 
+            --text-color: #333;
+            --background-color: #f3f3f3;
+        }
+
+        body {
+            font-family: var(--font-family);
+            margin: 0;
+            padding: 0;
+            color: var(--text-color);
+            background-color: var(--background-color);
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between; 
+            background-color: var(--primary-color);
+            color: #fff;
+            padding-bottom: 20px;
+        }
+
+        img {
+            margin-right: 20px;
+            margin-bottom: 0; 
+        }
+
+        h1 {
+            text-transform: uppercase;
+            margin: 0;
+
+        }
+
+        nav {
+            text-align: center;
+            padding: 10px;
+            font-family: var(--font-family);
+            background-color: var(--secondary-color);
+        }
+
+        nav a {
+            text-decoration: none;
+            margin: 0 10px;
+            color: #fff;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        section {
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+            background-color: #fff;
+        }
+
+        h2, h3 {
+            margin-bottom: 20px;
+            color: var(--primary-color);
+        }
+
+        iframe {
+            max-width: 100%;
+            height: 315px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 20px;
+        }
+
+        .text-wrapper {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        section.active-section {
+            border: 2px solid var(--primary-color);
+        }
+
+        /* @media screen and (min-width: 768px) {
+            .grid-container {
+                grid-template-columns: repeat(2, 1fr);
+            } */
+        /* } */
+    </style>
+</head>
+
+<body>
+    <header> 
+        <div>
+        <img src="public/img/CA-studiepartner-svg/CA_Studiepartner_horisontal_rgb_hvid.svg" width="300" height="120"></div>
+        <div>
+            <h1 style="margin-top: 100px; position:sticky;">#CaBrighterFuture</h1>
+        </div>
+        <div></div>
+        <div></div>
+    </header>
+
+    <nav>
+        <a href="#section1">#CaBrighterFuture</a>
+        <a href="#section2">Hvem er vi?</a>
+    </nav>
+
+    <section id="section1" class="active-section">
+        <h2>#CaBrighterFuture</h2>
+        <p>Velkommen til #CaBrighterFuture - din vej til en lysere fremtid! Vi er her for at styrke, inspirere og hjælpe unge business studerende som dig med at forme deres karrierevej.</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+        <div class="grid-container">
+            <div>
+                <h3>Karriereressourcer og Rådgivning</h3>
+                <p>Få adgang til eksklusive ressourcer og personlig rådgivning, der guider dig gennem karrierelandskabet. Vi støtter dine ambitioner og giver dig redskaberne til succes.</p>
+            </div>
+            <div>
+                <h3>Inspirerende Medlemshistorier</h3>
+                <p>Læs fortællinger fra vores medlemmer, der har brugt CA A-kassens støtte til at nå deres mål. Lad dig inspirere til din egen succesrejse sammen med vores engagerede fællesskab.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="section2">
+        <h2>Meld dig ind idag</h2>
+        <div class="grid-container">
+            <div>
+                <h3>Netværksmuligheder</h3>
+                <p>Skab meningsfulde forbindelser med ligesindede fagfolk og erfarne mentorer. Del erfaringer og styrk din position på arbejdsmarkedet gennem vores netværkssamfund.</p>
+            </div>
+            <div>
+                <h3>Eksklusive Events og Aktiviteter</h3>
+                <p>Deltag i særlige arrangementer, workshops og træningssessioner, der er skræddersyet til dine karrieremål. Få en forsmag på branchens realiteter og udvid dine færdigheder.</p>
+                <h3>Økonomisk Tryghed</h3>
+                <p>Som medlem af CA A-kassen investerer du ikke kun i din karriere, men også i din økonomiske tryghed. Få klarhed over, hvordan vi støtter vores medlemmer økonomisk, så du kan fokusere på din vækst uden bekymringer.</p>
+                <p>Tag det første skridt mod en lysere fremtid med #cABrighterFuture. Bliv medlem i dag og vær med til at forme din vej til succes! 🌟</p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener('keydown', function (event) {
+            const currentSection = document.querySelector('.active-section');
+            let nextSection;
+
+            if (event.key === 'ArrowDown') {
+                nextSection = currentSection.nextElementSibling;
+            } else if (event.key === 'ArrowUp') {
+                nextSection = currentSection.previousElementSibling;
+            }
+
+            if (nextSection) {
+                currentSection.classList.remove('active-section');
+                nextSection.classList.add('active-section');
+                nextSection.scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+    </script>
+</body>
+
 </html>
