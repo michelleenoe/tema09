@@ -127,6 +127,33 @@ import Sections from "../Components/Sections.astro";
         border: 2px solid var(--primary-color);
       }
 
+        /* @media screen and (min-width: 768px) {
+            .grid-container {
+                grid-template-columns: repeat(2, 1fr);
+            } */
+        /* } */
+
+        .button {
+    padding: 20px 30px;
+    text-decoration: none;
+    font-weight: 700;
+    border: 3px solid transparent;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    font-weight: 400;
+    background-color: white;
+    color: #054674;
+    border-color: #054674;
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+    cursor: pointer
+}
+
+.button:hover {
+    background-color: #054674;
+    color: white;
+}
       @media screen and (max-width: 768px) {
         .section-grid {
           grid-template-columns: 1fr;
@@ -136,8 +163,18 @@ import Sections from "../Components/Sections.astro";
         }
       }
     </style>
-  </head>
-<header>
+</head>
+
+<body>
+    <header> 
+        <div>
+            <a target="_blank" href="https://www.ca.dk/">
+        <img src="public/img/CA-studiepartner-svg/CA_Studiepartner_horisontal_rgb_hvid.svg" width="300" height="120"></div></a>
+        <div>
+            <h1 style="margin-top: 100px; position:sticky;">#CaBrighterFuture</h1>
+        </div>
+        <div></div>
+        <div></div>
     </header>
     <body>
     <Sections/>
